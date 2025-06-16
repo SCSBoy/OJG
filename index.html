@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Étudiants</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body>
+    <h1>Gestion des Étudiants</h1>
+    
+    <div id="alert" class="alert"></div>
+    
+    <div class="form-group">
+        <input type="text" id="nom" placeholder="Nom de l'étudiant" />
+        <button>Ajouter</button>
+    </div>
+
+    <h2>Liste des étudiants</h2>
+    <ul id="liste"></ul>
+
+    <script type="module">
+        import { initialiserUI } from '/src/js/ui.js';
+        
+        // Initialisation de l'interface utilisateur
+        document.addEventListener('DOMContentLoaded', initialiserUI);
+    </script>
+</body>
+</html> 
